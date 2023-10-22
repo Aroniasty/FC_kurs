@@ -98,8 +98,19 @@ imie_uzytkownika = uzytkownik_slownik["imie"]
 uzytkownik_slownik["plec"] = "mezczyzna"
 plec_uzytkownika = uzytkownik_slownik.get("plec", "kobieta")
 print(plec_uzytkownika)
-print(uzytkownik_slownik["imie"])
+# print(uzytkownik_slownik["imie"])
 lista_ocen = [5, 4, 3, 5, 1]
-lista_ocen[0] = 2
-uzytkownik_slownik["imie"] = "Jacek"
+# lista_ocen[0] = 2
+# uzytkownik_slownik["imie"] = "Jacek"
 print(uzytkownik_slownik)
+for ocena in lista_ocen:
+    print(ocena)
+
+for informacja_o_uzytkowniku in uzytkownik_slownik:
+    print(informacja_o_uzytkowniku)
+
+for wartosc_informacji in uzytkownik_slownik.values():
+    print(wartosc_informacji)
+
+for klucz, wartosc in uzytkownik_slownik.items():
+    print(f"{klucz}: {wartosc}")
