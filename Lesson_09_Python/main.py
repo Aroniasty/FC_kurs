@@ -1,5 +1,5 @@
-from Lesson_09_Python.klasy.uczen import Uczen, dodaj_dwie_liczby
-from Lesson_09_Python.klasy.baza_szkolna import BazaSzkolna, znajdz_mojego_ucznia
+from zajecia_9.klasy.uczen import Uczen, dodaj_dwie_liczby
+from zajecia_9.klasy.baza_szkolna import BazaSzkolna, znajdz_mojego_ucznia
 
 uczen_michal = Uczen(imie="Michal", nazwisko="Zietkowski", oceny=[1, 3, 3, 4])
 uczen_piotr = Uczen(imie="Piotr", nazwisko="Nazwisko", oceny=[1, 3, 3, 1])

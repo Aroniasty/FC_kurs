@@ -10,7 +10,7 @@ najwecej_pustych_kg = 0
 for element in range(liczba_elementow):
     waga_elementu = float(input("Podaj mi wagę elementu: "))
     suma_wszystkich_kilogramow += waga_elementu
-    if waga_elementu + waga_paczki < 20:
+    if waga_elementu + waga_paczki <= 20:
         waga_paczki += waga_elementu
     else:
         suma_pustych_kilogramow += (20 - waga_paczki)
@@ -28,5 +28,7 @@ if puste_kg_w_ostatniej_paczce > najwecej_pustych_kg:
 
 print(f"Suma wszystkich kg wysłanych to: {suma_wszystkich_kilogramow}")
 print(f"Ilość paczek to: {ilosc_paczek}")
-print(f"Liczba pustch kg w paczkach to: {suma_pustych_kilogramow}")
+print(f"Liczba pustych kg w paczkach to: {suma_pustych_kilogramow}")
 print(f"Najmniej kg było w paczce {paczka_z_najwieksza_iloscia_pustcy_kg}, było to: {najwecej_pustych_kg}")
+
+
