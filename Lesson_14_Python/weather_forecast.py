@@ -49,4 +49,3 @@ if find_data_in_file():
     search_data_in_file()
 else:
     search_weather_from_api(searched_date="2023-11-10", city=city)
-
